@@ -1,13 +1,16 @@
-print("\t\t\t Snake,Gun and Water game.\n")
+print("\t\t\t Welcome to Snake, Water and Gun Game\n")
+
 import random
 lst=["Snake", "Water", "Gun"]
 print(lst)
+chances= "10 chances"
 u="You have %s"% (chances)
 print(u)
+no_of_chances=10
 human_score=0
 computer_score=0
 print("Guess,S for Snake , W for Water and G for Gun.")
-while(no_of_chance=10 and no_of_chances>0):
+while(no_of_chances<=10 and no_of_chances>0):
 			print("Enter the guess from above:")
 			a=input()
 			#print(a.capitalize())
@@ -47,7 +50,7 @@ while(no_of_chance=10 and no_of_chances>0):
 				info=f"Your guess is {a} and computer guess is {rand}."
 				print(info)
 				computer_score=computer_score+1
-				pnt("computer_score is :",computer_score)
+				print("computer_score is :",computer_score)
 				no_of_chances=no_of_chances-1
 				print("no_of_chances left are :" ,no_of_chances)
 			elif a=="G" and rand=="Snake":
@@ -80,7 +83,7 @@ while(no_of_chance=10 and no_of_chances>0):
 								print("You are Winner!")
 								break
 							if human_score<computer_score:
-									info=f"computer_score is {computer_score} and human_score is    {human_score}."
+									info=f"computer_score is {computer_score} and human_score is    {human_score}."
 									print(info)
 									print("You lose!")
-									brea
+									break
