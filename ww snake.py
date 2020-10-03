@@ -69,6 +69,7 @@ while(no_of_chance=10 and no_of_chances>0):
 				print("Try Again!")
 				no_of_chances=no_of_chances-1
 				print("no_of_chances left are :" ,no_of_chances)
+				print("YO")
 		
 			if (no_of_chances<=0):
 							if human_score==computer_score:
